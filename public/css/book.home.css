@@ -1,0 +1,76 @@
+
+@media only screen and (min-width: 769px) {
+  table {
+    width: 100%;
+  }
+  .container {
+    padding: 0;
+  }
+  td, th {
+    padding: 0.6vw 0.6vh;
+  }
+  tbody > tr:nth-child(odd) {
+    background-color: #eee;
+  }
+  
+  td:nth-of-type(1) { width: 8%; }
+  td:nth-of-type(2) { width: 8%; }
+  td:nth-of-type(3) { width: 8%; }
+  td:nth-of-type(4) { width: 8%; }
+  td:nth-of-type(5) { width: 25%; }
+  td:nth-of-type(6) { width: 7%; }
+  td:nth-of-type(7) { width: 19% }
+  td:nth-of-type(8) { width: 8%; }
+  td:nth-of-type(9) { width: 8%; }
+
+}
+@media only screen and (max-width: 768px) {
+  table, thead, tbody, th, tr, td {
+    display: block;
+    padding: 0.8vw 1.2vh; 
+    background-color: #eee;
+  }
+  tbody {
+    border: 1px dashed #000;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    background-color: #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 4.6vh;
+  }
+  td {
+    position: relative;
+    padding-left: 50%;
+    word-wrap: break-word;
+  }
+  td:before {
+    position: absolute;
+    left: 6px;
+  }
+  tr:nth-of-type(1n) { margin-bottom: 0; padding-bottom: 0; }
+	tr:nth-of-type(1n) > td:nth-of-type(1):before { content: "Name"; font-weight: bold; }
+	tr:nth-of-type(1n) > td:nth-of-type(2):before { content: "Genre"; font-weight: bold; }
+	tr:nth-of-type(1n) > td:nth-of-type(3):before { content: "Author";font-weight: bold;  }
+	tr:nth-of-type(1n) > td:nth-of-type(4):before { content: "Price"; font-weight: bold; }
+	tr:nth-of-type(1n) > td:nth-of-type(5):before { content: "Description"; font-weight: bold; }
+	tr:nth-of-type(1n) > td:nth-of-type(6):before { content: "Stocks"; font-weight: bold; }
+	tr:nth-of-type(1n) > td:nth-of-type(7):before { content: "Image"; font-weight: bold; }
+	tr:nth-of-type(1n) > td:nth-of-type(8):before { content: "Rating"; font-weight: bold; }
+	tr:nth-of-type(1n) > td:nth-of-type(9):before { content: "Show"; font-weight: bold; }
+  tr:nth-of-type(2n) { margin-bottom: 0; padding-top: 0; padding-bottom: 0;}
+  tr:nth-of-type(2n) > td:nth-of-type(1):before { content: "Edit"; font-weight: bold; }
+  tr:nth-of-type(3n) { margin-bottom: 1.5rem; padding-top: 0; padding-bottom: 0; border-bottom: 1px dashed #000; }
+  tr:nth-of-type(3n) > td:nth-of-type(1):before { content: "Delete"; font-weight: bold; }
+}
+@media only screen and (min-width: 1320px) {
+  .container {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
